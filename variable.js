@@ -3,7 +3,7 @@
 // use this for Vanila JavaScript
 'use strict';
 
-// 2. Variable
+// 2. Variable, rw(read/write)
 // let (added in ES6)
 let globalName = 'global name'; //global scope
 { //blck scope
@@ -27,17 +27,23 @@ var age;
 // name = 4;
 // let name;
 
-// 3. constants
+// 3. constant, r(read only)
+// use const whenever possible.
+// only use let if variable needs to change.
+const dayInWeek = 7;
+const maxNumber = 5;
+
+//Note!
+//Immutable data types: primitive types, frozen objects(i.e. object.freeze())
+//Mutable data types: all objects by default are mutable in JS
 // favor immutable data type always for a few reasons:
 // -Security
 // -thread safety
 // -reduce human mistakes
-const dayInWeek = 7;
-const maxNumber = 5;
 
 // 4. Variable types
 // primitive, single item: Number, string, boolean, null, undefiened, Symbol
-// Object, box container
+// Object, box container 
 // function, first-class function
 
 // C data types for Number
