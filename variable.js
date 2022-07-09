@@ -6,7 +6,7 @@
 // 2. Variable, rw(read/write)
 // let (added in ES6)
 let globalName = 'global name'; //global scope
-{ //blck scope
+{ //block scope
    let name = 'paul';
    console.log(name);
    name = 'hello';
